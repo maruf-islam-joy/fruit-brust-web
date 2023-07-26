@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,91 @@
     <!-- favicon  -->
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- tailwind and daisy ui CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
+    <!-- tailwind custom classes  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div
+                class="
+                
+                flex justify-between items-center
+                relative  lg:bg-[#F85559] mt-6 mb-12   lg:px-10 lg:py-4 lg:w-3/4  lg:mx-auto lg:flex lg:justify-between  lg:content-center lg:rounded-full 
+                
+                ">
+
+                <div class=" hidden absolute lg:flex lg:static ">
+                    <ul class="menu menu-horizontal lg:text-white lg:hover:bg-transparent ">
+                        <li><a class="lg:hover:bg-transparent">Home</a></li>
+                        <li><a class="lg:hover:bg-transparent">Shop</a></li>
+                        <li><a class="lg:hover:bg-transparent">News</a></li>
+                        <li><a class="lg:hover:bg-transparent">Contact</a></li>
+                    </ul>
+                </div>
+                <div class=" flex items-center pl-5 lg:pl-0 lg:w-auto  gap-2 ">
+                    <img class="w-10" src="images/logo.png" alt="">
+                    <a class=" text-3xl font-semibold lg:text-white">Fruit Burst</a>
+                </div>
+                <div class="absolute right-0 lg:static lg:hidden">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100  ">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class=" w-[280px]  hidden p-2 border rounded-3xl lg:flex lg:justify-between  lg:bg-white 
+               absolute lg:static
+                
+                ">
+                    <input class="border-none outline-none text-xs px-4 " type="search" name="" id="" placeholder="Search here">
+                    <button><i class="fa-solid fa-magnifying-glass px-4"></i></button>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
