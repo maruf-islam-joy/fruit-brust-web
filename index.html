@@ -24,7 +24,13 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
+                    },
+                    backgroundImage: {
+                        'banner1': "linear-gradient(180deg, #121212, #12121200), url('./images/banner1.png')",
+                        'banner2': "linear-gradient(180deg, #121212, #12121200), url('./images/banner2.png')",
+                        'banner3': "linear-gradient(180deg, #121212, #12121200), url('./images/banner3.png')",
+                        'banner4': "linear-gradient(180deg, #121212, #12121200), url('./images/banner4.png')",
+                    },
                 }
             }
         }
@@ -35,12 +41,13 @@
 
 <body>
     <header>
+
+        <!-- This is nav section  -->
         <nav>
-            <div
-                class="
+            <div class="
                 
                 flex justify-between items-center
-                relative  lg:bg-[#F85559] mt-6 mb-12   lg:px-10 lg:py-4 lg:w-3/4  lg:mx-auto lg:flex lg:justify-between  lg:content-center lg:rounded-full 
+                relative  lg:bg-[#F85559] mt-6 mb-12   lg:px-6 lg:py-4 lg:w-3/4  lg:mx-auto lg:flex lg:justify-between  lg:content-center lg:rounded-full 
                 
                 ">
 
@@ -59,12 +66,13 @@
                 <div class="absolute right-0 lg:static lg:hidden">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100  ">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100  ">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -77,13 +85,71 @@
                absolute lg:static
                 
                 ">
-                    <input class="border-none outline-none text-xs px-4 " type="search" name="" id="" placeholder="Search here">
+                    <input class="border-none outline-none text-xs px-4 " type="search" name="" id=""
+                        placeholder="Search here">
                     <button><i class="fa-solid fa-magnifying-glass px-4"></i></button>
 
                 </div>
             </div>
 
         </nav>
+
+        <!-- banner section  -->
+        <section class="w-3/4 mx-auto">
+            <div class="carousel w-full h-[500px]">
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-banner1  bg-cover">
+                    <!-- <img  src="images/banner1.png" class="w-full bg-gradient-to-r from-[#00000097] to-[#00000041] bg-blend-overlay bg-cover" /> -->
+                    <div class="flex flex-col items-center justify-center mx-auto ">
+                        <h3 class="text-center text-white text-6xl font-semibold mb-4">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-white font-semibold mb-4">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white font-bold border-none">Shop Now</button>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full bg-banner2  bg-cover">
+                    <div class="flex flex-col items-center justify-center mx-auto ">
+                        <h3 class="text-center">Exotic tastes at your <br> doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full bg-banner3  bg-cover">
+                    <div class="flex flex-col items-center justify-center mx-auto ">
+                        <h3 class="text-center">Exotic tastes at your <br> doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full bg-banner4  bg-cover">
+                    <div class="flex flex-col items-center justify-center mx-auto ">
+                        <h3 class="text-center">Exotic tastes at your <br> doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
     </header>
 
     <main>
