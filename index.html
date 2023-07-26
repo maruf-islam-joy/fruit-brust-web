@@ -34,12 +34,13 @@
                     colors: {
                         clifford: '#da373d',
                     },
+
                     backgroundImage: {
                         'banner1': "linear-gradient(180deg, #121212, #12121200), url('./images/banner1.png')",
                         'banner2': "linear-gradient(180deg, #121212, #12121200), url('./images/banner2.png')",
                         'banner3': "linear-gradient(180deg, #121212, #12121200), url('./images/banner3.png')",
                         'banner4': "linear-gradient(180deg, #121212, #12121200), url('./images/banner4.png')",
-                        'banner-meet': "linear-gradient(180deg, #121212, #121212B2), url('./images/team.png')",
+                        'banner-meet': "linear-gradient(90deg, #121212B2, #121212B2), url('./images/team.png')",
                     },
                 }
             }
@@ -49,7 +50,7 @@
 
 </head>
 
-<body class="m-0 p-0 font-lato">
+<body class="lg:m-0 lg:p-0 font-lato ">
     <header>
 
         <!-- This is nav section  -->
@@ -71,9 +72,9 @@
                 </div>
                 <div class=" flex items-center pl-5 lg:pl-0 lg:w-auto  gap-2 ">
                     <img class="w-10" src="images/logo.png" alt="">
-                    <a class=" text-3xl font-semibold lg:text-white">Fruit Burst</a>
+                    <a class="text-2xl lg:text-3xl font-semibold lg:text-white">Fruit Burst</a>
                 </div>
-                <div class="absolute right-0 lg:static lg:hidden">
+                <div class="absolute right-5 lg:static lg:hidden">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -105,56 +106,56 @@
         </nav>
 
         <!-- banner section  -->
-        <section class="w-3/4 relative mx-auto ">
-            <div class="carousel w-full h-[500px]">
-                <div id="slide1" class="carousel-item relative w-full bg-banner1  bg-cover border-none rounded-xl">
+        <section class="w-[90%] mx-auto  lg:w-3/4 relative lg:mx-auto ">
+            <div class="carousel w-full h-[200px]  lg:h-[500px]">
+                <div id="slide1" class="carousel-item relative w-full bg-banner1  bg-cover  border-none rounded-xl">
                     <!-- <img  src="images/banner1.png" class="w-full bg-gradient-to-r from-[#00000097] to-[#00000041] bg-blend-overlay bg-cover" /> -->
                     <div class="flex flex-col items-center justify-center mx-auto ">
-                        <h3 class="text-center text-white text-6xl font-semibold mb-4">Exotic tastes at your <br>
+                        <h3 class="text-center text-white text-2xl pt-5 mb-2 lg:pt-0 lg:text-6xl font-semibold lg:mb-4">Exotic tastes at your <br>
                             doorstep</h3>
-                        <p class="text-white font-semibold mb-4">We supply highly quality organic products</p>
+                        <p class="text-white mb-2 text-xs lg:text-base lg:font-semibold lg:mb-4">We supply highly quality organic products</p>
                         <button class="btn bg-[#F85559] text-white font-bold border-none normal-case">Shop Now</button>
                     </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
-                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        <a href="#slide4" class="btn btn-circle  bg-[#121212B2] text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-[#121212B2] text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full bg-banner2  bg-cover border-none rounded-xl">
                     <div class="flex flex-col items-center justify-center mx-auto ">
-                        <h3 class="text-center text-white text-6xl font-semibold mb-4">Exotic tastes at your <br>
+                        <h3 class="text-center text-white text-2xl pt-5 mb-2 lg:pt-0 lg:text-6xl font-semibold lg:mb-4">Exotic tastes at your <br>
                             doorstep</h3>
-                        <p class="text-white font-semibold mb-4">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] text-white font-bold border-none">Shop Now</button>
+                        <p class="text-white mb-2 text-xs lg:text-base lg:font-semibold lg:mb-4">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white font-bold border-none normal-case">Shop Now</button>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
-                        <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        <a href="#slide1" class="btn btn-circle bg-[#121212B2] text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-[#121212B2] text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full bg-banner3  bg-cover border-none rounded-xl">
                     <div class="flex flex-col items-center justify-center mx-auto ">
-                        <h3 class="text-center text-white text-6xl font-semibold mb-4">Exotic tastes at your <br>
+                        <h3 class="text-center text-white text-2xl pt-5 mb-2 lg:pt-0 lg:text-6xl font-semibold lg:mb-4">Exotic tastes at your <br>
                             doorstep</h3>
-                        <p class="text-white font-semibold mb-4">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] text-white font-bold border-none">Shop Now</button>
+                        <p class="text-white mb-2 text-xs lg:text-base lg:font-semibold lg:mb-4">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white font-bold border-none normal-case">Shop Now</button>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
-                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        <a href="#slide2" class="btn btn-circle bg-[#121212B2] text-white border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-[#121212B2] text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full bg-banner4  bg-cover border-none rounded-xl">
                     <div class="flex flex-col items-center justify-center mx-auto ">
-                        <h3 class="text-center text-white text-6xl font-semibold mb-4">Exotic tastes at your <br>
+                        <h3 class="text-center text-white text-2xl pt-5 mb-2 lg:pt-0 lg:text-6xl font-semibold lg:mb-4">Exotic tastes at your <br>
                             doorstep</h3>
-                        <p class="text-white font-semibold mb-4">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] text-white font-bold border-none">Shop Now</button>
+                        <p class="text-white mb-2 text-xs lg:text-base lg:font-semibold lg:mb-4">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white font-bold border-none normal-case">Shop Now</button>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
-                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        <a href="#slide3" class="btn btn-circle bg-[#121212B2] text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-[#121212B2] text-white border-none">❯</a>
                     </div>
                 </div>
 
@@ -163,30 +164,30 @@
             <!-- under banner fruit section  -->
 
             <div
-                class=" flex justify-evenly w-[55%] bg-white absolute top-[80%] left-[23%] right-[20%] px-10 py-8 rounded-xl gap-8">
-                <div class="text-center">
+                class="hidden lg:flex justify-evenly  bg-white absolute top-[80%] left-[23%] right-[20%] px-10 py-8 rounded-xl gap-8">
+                <div class="text-center ">
                     <img src="images/fr1.png" alt="">
                     <p>Grapes</p>
 
                 </div>
-                <div class="text-center">
+                <div class="text-center ">
                     <img src="images/fruit2.png" alt="">
                     <p>Orange</p>
 
                 </div>
-                <div class="text-center">
+                <div class="text-center ">
                     <img src="images/fr3.png" alt="">
                     <p>Mango</p>
 
                 </div>
-                <div class="text-center">
+                <div class="text-center ">
                     <img src="images/fr4.png" alt="">
                     <p>Strawberry</p>
 
                 </div>
-                <div class="text-center">
+                <div class="text-center ">
                     <img src="images/fr5.png" alt="">
-                    <p>Pomegranate</p>
+                    <p>Pomegran</p>
 
                 </div>
 
@@ -201,40 +202,47 @@
     <main>
         <!-- Deal of the day  -->
 
-        <section class="mt-52 flex w-3/4 mb-12 mx-auto justify-between items-center ">
-            <div class="space-y-3">
-                <h3 class="text-4xl font-bold ">
+        <section class="mt-14 lg:mt-52 flex
+        flex-col 
+        lg:flex-row
+        w-3/4
+        mb-8
+        lg:mb-12 mx-auto justify-between items-center
+        lg:w-3/4
+        ">
+            <div class="space-y-3 text-center mb-8 lg:mb-0 lg:text-left">
+                <h3 class="text-xl font-black lg:text-4xl lg:font-bold ">
                     Deal of the day
                 </h3>
-                <p class="w-[65%] text-sm">
+                <p class="w-[90%] text-gray-700 mx-auto lg:w-[65%] lg:mx-0 text-sm font-thin ">
                     Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                     literature from 45 BC, making it over 2000 years old.
                 </p>
             </div>
             <div class="flex gap-5">
                 <div class="flex flex-col text-center ">
-                    <span class="countdown font-mono text-5xl font-bold">
+                    <span class="countdown  text-3xl lg:text-5xl font-bold">
                         <span style="--value:29;"></span>
                     </span>
                     Days
                 </div>
                 <h4 class="text-2xl">:</h4>
                 <div class="flex flex-col text-center ">
-                    <span class="countdown font-mono text-5xl font-bold">
+                    <span class="countdown  text-3xl lg:text-5xl font-bold">
                         <span style="--value:15;"></span>
                     </span>
                     Hours
                 </div>
                 <h4 class="text-2xl">:</h4>
                 <div class="flex flex-col text-center ">
-                    <span class="countdown font-mono text-5xl font-bold">
+                    <span class="countdown  text-3xl lg:text-5xl font-bold">
                         <span style="--value:25;"></span>
                     </span>
                     Min
                 </div>
                 <h4 class="text-2xl">:</h4>
                 <div class="flex flex-col  text-center ">
-                    <span class="countdown font-mono text-5xl font-bold">
+                    <span class="countdown  text-3xl lg:text-5xl font-bold">
                         <span style="--value:08;"></span>
                     </span>
                     Sec
@@ -247,7 +255,9 @@
 
         <!-- Fruit card section  -->
         <section>
-            <div class="flex items-center justify-center content-center  w-3/4 mx-auto gap-10 ">
+            <div class="flex flex-col lg:flex-row items-center justify-center content-center w-[90%] lg:w-3/4 mx-auto gap-5 lg:gap-10 
+            
+            ">
 
                 <!-- card 1  -->
 
@@ -455,16 +465,16 @@
 
 
         <!-- Meet the team section  -->
-        <section class="w-3/4 h-[560px] p-24 mx-auto bg-banner-meet  bg-cover border-none rounded-md mb-24">
+        <section class="w-3/4 lg:h-[560px] p-12 lg:p-24 mx-auto bg-banner-meet  bg-cover border-none rounded-md mb-14 lg:mb-24">
             <div class="text-center mb-12 space-y-5">
-                <h3 class="text-white text-5xl font-semibold">Meet the team</h3>
-                <p class="text-white w-2/3 mx-auto text-sm font-thin">Contrary to popular belief, is not simply random
+                <h3 class="text-white text-2xl lg:text-5xl font-bold lg:font-semibold">Meet the team</h3>
+                <p class="text-white w-[90%] lg:w-2/3 mx-auto text-sm font-thin">Contrary to popular belief, is not simply random
                     text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
                     old.</p>
             </div>
 
             <!-- member card section  -->
-            <div class="flex justify-center gap-20">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-center gap-20">
                 <!-- member 1  -->
                 <div class="text-center">
                     <img class="w-28" src="images/member1.png" alt="">
@@ -513,9 +523,9 @@
 
         <!-- why choose us section  -->
         <section class="w-full mx-auto mb-20">
-            <div class="text-center space-y-4 mb-14">
-                <h3 class=" text-5xl font-semibold">Why Choose Us</h3>
-                <p class="text-[#12121299] w-[35%] mx-auto text-sm font-normal">Contrary to popular belief, is not
+            <div class="text-center space-y-4 mb-5  lg:mb-14">
+                <h3 class=" text-2xl md:text-4xl lg:text-5xl font-bold lg:font-semibold ">Why Choose Us</h3>
+                <p class="text-[#12121299] w-[65%] lg:w-[35%] mx-auto text-sm md:text-base lg:text-xl font-normal">Contrary to popular belief, is not
                     simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
                     2000 years old.</p>
             </div>
@@ -523,52 +533,52 @@
 
             <!-- why choose us flex div  -->
 
-            <div class="flex justify-center items-center gap-5">
+            <div class="flex flex-col lg:flex-row w-3/4 mx-auto justify-between items-center gap-5">
 
                 <!-- left  -->
-                <div class="space-y-5">
+                <div class="space-y-5 order-2  lg:order-1 ">
 
                     <!-- left 1 -->
-                    <div class="flex gap-5  w-fit">
+                    <div class="flex flex-col lg:flex-row text-center lg:text-left gap-5  w-fit">
                         <div class="bg-gray-200 w-[60px] h-[60px] mx-auto  p-4 rounded-full">
                             <img src="icon/group 1.png" alt="">
                         </div>
                         <div>
                             <div>
                                 <h3 class="text-xl font-bold ">Dedicated Team</h3>
-                                <hr class="w-20 mt-3 mb-4 border-[#121212CC]">
+                                <hr class="w-20 mx-auto lg:mx-0 mt-3 mb-4 border-[#121212CC]">
                             </div>
-                            <p class="w-[280px] text-sm">Professional employees are there for you to pick the most
+                            <p class="w-[280px] text-xl lg:text-sm">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
 
                     <!-- left 2 -->
-                    <div class="flex gap-5  w-fit">
+                    <div class="flex flex-col lg:flex-row text-center lg:text-left  gap-5  w-fit">
                         <div class="bg-gray-200 w-[60px] h-[60px] mx-auto p-4 rounded-full">
                             <img src="icon/love 1.png" alt="">
                         </div>
                         <div>
                             <div>
                                 <h3 class="text-xl font-bold ">Fresh is Best</h3>
-                                <hr class="w-20 mt-3 mb-4 border-[#121212CC]">
+                                <hr class="w-20 mx-auto lg:mx-0 mt-3 mb-4 border-[#121212CC]">
                             </div>
-                            <p class="w-[280px] text-sm">Professional employees are there for you to pick the most
+                            <p class="w-[280px] text-xl lg:text-sm">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
 
                     <!-- left 3 -->
-                    <div class="flex gap-5  w-fit">
+                    <div class="flex flex-col lg:flex-row text-center lg:text-left gap-5  w-fit">
                         <div class="bg-gray-200 w-[60px] h-[60px] mx-auto p-4 rounded-full">
                             <img src="icon/gift-box 1.png" alt="">
                         </div>
                         <div>
                             <div>
                                 <h3 class="text-xl font-bold ">Gift Certificates</h3>
-                                <hr class="w-20 mt-3 mb-4 border-[#121212CC]">
+                                <hr class="w-20 mx-auto lg:mx-0 mt-3 mb-4 border-[#121212CC]">
                             </div>
-                            <p class="w-[280px] text-sm">Professional employees are there for you to pick the most
+                            <p class="w-[280px] text-xl lg:text-sm">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
@@ -576,54 +586,54 @@
                 </div>
 
                 <!-- center  -->
-                <div>
-                    <img class="w-[400px]" src="images/whychoose1.png" alt="">
+                <div class="order-1 lg:order-2">
+                    <img class="lg:w-[400px]" src="images/whychoose1.png" alt="">
                 </div>
 
                 <!-- right  -->
-                <div class="space-y-5">
+                <div class="space-y-5 order-3">
 
                     <!-- right 1 -->
-                    <div class="flex flex-row-reverse text-right gap-5  w-fit">
+                    <div class="flex flex-col lg:flex-row-reverse text-center lg:text-right gap-5  w-fit">
                         <div class="bg-gray-200 w-[60px] h-[60px] mx-auto  p-4 rounded-full">
                             <img src="icon/fruit 1.png" alt="">
                         </div>
                         <div>
                             <div class="relative">
                                 <h3 class="text-xl font-bold mb-4">Integrated Supplier</h3>
-                                <hr class="w-20 absolute right-0 pt-3 pb-4 border-[#121212CC]">
+                                <hr class="w-20 mx-auto lg:mx-0  lg:absolute lg:right-0 pt-3 pb-4 border-[#121212CC]">
                             </div>
-                            <p class="w-[280px] text-sm pt-4">Professional employees are there for you to pick the most
+                            <p class="w-[280px] text-xl lg:text-sm lg:pt-4">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
 
                     <!-- right 2 -->
-                    <div class="flex flex-row-reverse text-right gap-5  w-fit">
+                    <div class="flex flex-col lg:flex-row-reverse text-center lg:text-right gap-5  w-fit">
                         <div class="bg-gray-200 w-[60px] h-[60px] mx-auto p-4 rounded-full">
                             <img src="icon/ice-cream 1.png" alt="">
                         </div>
                         <div>
                             <div class="relative">
                                 <h3 class="text-xl font-bold mb-4">Sustainable Practice</h3>
-                                <hr class="w-20 absolute right-0 pt-3 pb-4 border-[#121212CC]">
+                                <hr class="w-20 mx-auto lg:mx-0  lg:absolute lg:right-0 pt-3 pb-4 border-[#121212CC]">
                             </div>
-                            <p class="w-[280px] text-sm pt-4">Professional employees are there for you to pick the most
+                            <p class="w-[280px] text-xl lg:text-sm lg:pt-4">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
 
                     <!-- right 3 -->
-                    <div class="flex flex-row-reverse text-right gap-5  w-fit">
+                    <div class="flex flex-col lg:flex-row-reverse text-center lg:text-right gap-5  w-fit">
                         <div class="bg-gray-200 w-[60px] h-[60px] mx-auto p-4 rounded-full">
                             <img src="icon/like 1.png" alt="">
                         </div>
                         <div>
                             <div class="relative">
                                 <h3 class="text-xl font-bold mb-4">The Benefits Only</h3>
-                                <hr class="w-20 absolute right-0 pt-3 pb-4 border-[#121212CC]">
+                                <hr class="w-20 mx-auto lg:mx-0  lg:absolute lg:right-0 pt-3 pb-4 border-[#121212CC]">
                             </div>
-                            <p class="w-[280px] text-sm pt-4">Professional employees are there for you to pick the most
+                            <p class="w-[280px] text-xl lg:text-sm lg:pt-4">Professional employees are there for you to pick the most
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
@@ -637,16 +647,15 @@
 
     </main>
 
-    <footer class="bg-black text-center pt-24 pb-20 space-y-8">
+    <footer class="bg-black text-center px-5 lg:px-0 pt-24 pb-20 space-y-8 ">
         <div class="space-y-10">
             <div class=" flex justify-center ">
                 <img class="w-10" src="images/logo.png" alt="">
                 <a class=" text-3xl font-semibold text-white">Fruit Burst</a>
             </div>
-            <div class=" font-thin text-gray-100 text-sm space-x-10">
+            <div class="flex flex-wrap content-center items-center justify-center gap-2 lg:block font-thin text-gray-100 text-base lg:text-sm space-x-10">
                 <a href="">Home</a>
                 <a href="">About Us</a>
-
                 <a href="">Shop</a>
                 <a href="">All fruits</a>
                 <a href="">Support</a>
@@ -654,7 +663,7 @@
 
             </div>
         </div>
-        <div class="space-x-8">
+        <div class="space-x-3 lg:space-x-8">
             <button class="">
                 <img class="w-[30px]" src="icon/twitter 1.svg" alt="">
             </button>
